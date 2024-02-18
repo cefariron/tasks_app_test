@@ -18,7 +18,7 @@ const initialState = {
 
 // Поки що використовуємо редюсер який
 // тільки повертає отриманий стан
-const rootReducer = (state = initialState, action) => {
+const rootReducer = (state = initialState, action ) => { //+action
   return state;
 };
 
