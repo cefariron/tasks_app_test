@@ -6,6 +6,7 @@ import { AppBar } from "./AppBar/AppBar";
 import { TaskForm } from "./TaskForm/TaskForm";
 import { TaskList } from "./TaskList/TaskList";
 import { selectError, selectIsLoading } from "../redux/selectors";
+// import PrivacyPolicyFR from "../PrivacyP/Privacy Policy_December2023_FR";
 
 export default function App() {
   const dispatch = useDispatch();
@@ -21,6 +22,7 @@ export default function App() {
       <TaskForm />
       {isLoading && !error && <b>Request in progress...</b>}
       <TaskList />
+      {/* <PrivacyPolicyFR /> */}
     </Layout>
   );
 }
